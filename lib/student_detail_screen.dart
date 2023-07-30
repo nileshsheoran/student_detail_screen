@@ -21,7 +21,7 @@ class _StudentDetailState extends State<StudentDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Detail'),
+        title: const Text(' Result Detail'),
         backgroundColor: Colors.green,
         actions: [
           IconButton(
