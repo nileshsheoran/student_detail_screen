@@ -142,7 +142,7 @@ class _StudentDetailState extends State<StudentDetail> {
                   height: 16,
                 ),
                 Text(
-                  'Total=$total',
+                  'Total Number=$total',
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 ),
