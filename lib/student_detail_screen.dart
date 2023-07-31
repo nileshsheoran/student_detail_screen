@@ -21,7 +21,7 @@ class _StudentDetailState extends State<StudentDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(' Result Detail'),
+        title: const Text(' Result detail'),
         backgroundColor: Colors.green,
         actions: [
           IconButton(
@@ -128,13 +128,13 @@ class _StudentDetailState extends State<StudentDetail> {
                       } else if (percentage >= 50) {
                         grade = 'D Grade ';
                       } else {
-                        grade = 'you are fail';
+                        grade = 'You are fail';
                       }
 
                       setState(() {});
                     },
                     child: const Text(
-                      'Check Result',
+                      'Find Result',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     )),
@@ -142,7 +142,7 @@ class _StudentDetailState extends State<StudentDetail> {
                   height: 16,
                 ),
                 Text(
-                  'Total Number=$total',
+                  'Total marks: $total',
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 ),
@@ -150,7 +150,7 @@ class _StudentDetailState extends State<StudentDetail> {
                   height: 16,
                 ),
                 Text(
-                  'Percentage=$percentage',
+                  'Percentage: $percentage',
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 ),
@@ -158,7 +158,7 @@ class _StudentDetailState extends State<StudentDetail> {
                   height: 16,
                 ),
                 Text(
-                  'Grade=$grade',
+                  'Grade: $grade',
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 ),
