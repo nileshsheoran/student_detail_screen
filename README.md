@@ -1,4 +1,4 @@
-# student_detail_screen
+# Student Detail
 
 A new Flutter project.
 
