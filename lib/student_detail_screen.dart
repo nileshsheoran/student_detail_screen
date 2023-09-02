@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:student_detail_screen/string_const.dart';
 
 class StudentDetail extends StatefulWidget {
   const StudentDetail({super.key});
@@ -16,12 +17,11 @@ class _StudentDetailState extends State<StudentDetail> {
   int total = 0;
   double percentage = 0;
   String grade = '';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(' Result detail'),
+        title: const Text(StringConst.tittleText),
         backgroundColor: Colors.green,
         actions: [
           IconButton(
@@ -47,7 +47,7 @@ class _StudentDetailState extends State<StudentDetail> {
                         8,
                       ),
                     ),
-                    hintText: 'Enter Hindi Marks',
+                    hintText: StringConst.hintHindiText,
                   ),
                 ),
                 const SizedBox(
@@ -61,7 +61,7 @@ class _StudentDetailState extends State<StudentDetail> {
                         8,
                       ),
                     ),
-                    hintText: 'Enter English Marks',
+                    hintText: StringConst.hintEnglishText,
                   ),
                 ),
                 const SizedBox(
@@ -75,7 +75,7 @@ class _StudentDetailState extends State<StudentDetail> {
                         8,
                       ),
                     ),
-                    hintText: 'Enter Math Marks',
+                    hintText: StringConst.hintMathText,
                   ),
                 ),
                 const SizedBox(
@@ -89,7 +89,7 @@ class _StudentDetailState extends State<StudentDetail> {
                         8,
                       ),
                     ),
-                    hintText: 'Enter Science Marks',
+                    hintText: StringConst.hintScienceText,
                   ),
                 ),
                 const SizedBox(
@@ -103,7 +103,7 @@ class _StudentDetailState extends State<StudentDetail> {
                         8,
                       ),
                     ),
-                    hintText: 'Enter Computer Marks',
+                    hintText: StringConst.hintComputerText,
                   ),
                 ),
                 const SizedBox(
@@ -134,7 +134,7 @@ class _StudentDetailState extends State<StudentDetail> {
                       setState(() {});
                     },
                     child: const Text(
-                      'Find Result',
+                      StringConst.elevatedText,
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     )),
